@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
+        /* body {
             margin: 20px 30px;
             padding: 15px;
             background-color:#ffc100;
-        }
-        .container{
+        } */
+        /* .container{
             width: 100%;
             margin: 15px;
             padding: 20px;
@@ -19,7 +19,8 @@
             border-radius: 20px;
             background-color: rgb(252, 237, 157);
             color: rgb(8, 0, 0);
-        }
+        } */
+/*         
         h1,h3{
             text-align: center;
         }
@@ -59,7 +60,67 @@
         #ma{
             margin: 5px;
         }
-        
+         */
+        body{
+            margin: 0;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        border: 3px solid red;
+        padding: 3px;
+        background-color: rgb(73, 255, 255);
+        }
+        form{
+            display:flex ;
+            flex-direction: column;
+            border: 3px solid black;
+            /* padding: 20px; */
+            background-color: aquamarine;
+            width: 55%;
+            padding: 40px ;
+
+        }
+        label{
+            display: block;
+            font-size: 1.5em;
+            margin-left: 20px;
+        }
+        input{
+            width: 90%;
+            margin-left: 20px;
+        }
+        h1,#description{
+            text-align: center;
+        }
+        #number,#name,#email{
+            height: 2em;
+            
+        }
+        #dropdown{
+            width: 90%;
+            margin-left: 20px;
+            height: 2em;
+        }
+        .cb{
+            display: block;
+            
+        }
+        #ma,#fe{
+            display:block;
+            
+        }
+        p{
+            margin-left: 20px;
+            font-size: 1.5em;
+        }
+        fieldset{
+            margin: 20px;
+            width: 90%;
+            /* font-size: 1.5em; */
+        }
     </style>
 </head>
 <body>
@@ -82,7 +143,7 @@
         <div>
             <p>Which option best describes your current role?</p>
             <select id="dropdown" name="role" class="pa" required>
-            <option disabled selected value>Select current role</option>
+            <option disabled selected value id="roleop">Select current role</option>
             <option value="student">Student</option>
             <option value="job">Full Time Job</option>
             <option value="learner">Full Time Learner</option>
@@ -93,20 +154,22 @@
         <div>
             <fieldset>
                 <legend >Gender</legend>
-            Male <input type="radio" name="gender" id="ma"> Female <input type="radio" name="gender" id="fe">
+                <label for="ma">Male</label>
+                <label for="fe">Female</label>
+            <input type="radio" name="gender" id="ma">  <input type="radio" name="gender" id="fe">
         </fieldset>
         </div>
         <div >
             Technology familiar with :<br>
         
-            <input class="checks"  type="checkbox" value="WebDev" name="web" id="w"><label for="w">WebDev</label><br>
-            <input class="checks"  type="checkbox" value="AndroidDev" name="android" id="a"><label for="a">AndroidDev</label><br>
-            <input class="checks"  type="checkbox" value="AI" name="ai" id="ar"><label for="ar">AI</label><br>
-            <input class="checks"  type="checkbox" value="MachineLearning" name="ml" id="m"><label for="m">MachineLearning</label><br>
-            <input class="checks"  type="checkbox" value="DataScience" name="ds" id="d"><label for="d">DataScience</label><br>
-            <input class="checks"  type="checkbox" value="BlockChain" name="bchain" id="bc"><label for="bc">BlockChain</label><br>
-            <input class="checks"  type="checkbox" value="BigData" name="bdata" id="b"><label for="b">BigData</label><br>
-            <input class="checks"  type="checkbox" value="CloudComputing" name="cc" id="c"><label for="c">CloudComputing</label><br>
+            <input class="checks"  type="checkbox" value="WebDev" class="cb" name="web" id="w"><label for="w">WebDev</label><br>
+            <input class="checks"  type="checkbox" value="AndroidDev" class="cb" name="android" id="a"><label for="a">AndroidDev</label><br>
+            <input class="checks"  type="checkbox" value="AI" class="cb" name="ai" id="ar"><label for="ar">AI</label><br>
+            <input class="checks"  type="checkbox" value="MachineLearning" class="cb" name="ml" id="m"><label for="m">MachineLearning</label><br>
+            <input class="checks"  type="checkbox" value="DataScience" class="cb" name="ds" id="d"><label for="d">DataScience</label><br>
+            <input class="checks"  type="checkbox" value="BlockChain" class="cb" name="bchain" id="bc"><label for="bc">BlockChain</label><br>
+            <input class="checks"  type="checkbox" value="BigData" class="cb" name="bdata" id="b"><label for="b">BigData</label><br>
+            <input class="checks"  type="checkbox" value="CloudComputing" class="cb" name="cc" id="c"><label for="c">CloudComputing</label><br>
         </div>
         <div>
             Leave your comments<input type="text" >
