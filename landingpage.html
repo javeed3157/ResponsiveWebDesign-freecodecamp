@@ -38,10 +38,99 @@
         }
         .container{
             width: 99%;
-            margin: 0 auto;
-            border: 3px solid red;
+            margin-top:20px ;
+            display: flex;
+            justify-content: center;
         }
-        
+        .container div{
+            padding: 5px;
+            height: 150px;
+            width: 70vw;
+            font-size: 1.5em;
+            background-color: #ffe479;
+        }
+        p{
+            margin-top: -15px;
+            font-size: large;
+        }
+        #section2{
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        #video{
+            height: 50vh;
+            width: 50vw;
+        }
+        #section3{
+            margin-top: 50px;
+            display: flex;
+            justify-content:center ;
+        }
+        .c1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 3px solid grey;
+            margin: 20px;
+            width:25%;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .h{
+            background-color: #ddd;
+            color: black;
+            width: 100%;
+            padding: 15px 0px;
+            font-weight: 700;
+            font-size: 1.5em;
+        }
+        ol{
+            margin-top: -20px;
+            list-style: none;
+            padding: 0px 7px 0px 0px;
+        }
+        li{
+            padding: 9px;
+            font-size: larger;
+            
+        }
+        h3{
+            font-size:2em;
+        }
+        .btn{
+            background-color: #ffe479;
+            font-weight: bold;
+            width: 50%;
+            height: 10vh;
+            font-size: larger;
+            margin: 10px 0px;
+            border-radius: 10px;
+        cursor: pointer;
+        }
+#frm {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  text-align: center;
+  height: 200px;
+  border: 1px solid black;
+}
+#frm input[type='email'] {
+  /* max-width: 322px; */
+  width: 90%;
+  padding: 5px;
+}
+
+#frm input[type='submit'] {
+  /* max-width: 150px; */
+  width: 80%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+  cursor: pointer;
+}
 
     </style>
 </head>
@@ -53,31 +142,75 @@
             <a href="#section1" class="nav-link hover">Features</a>
             <a href="#section2" class="nav-link hover">How it works</a>
             <a href="#section3" class="nav-link hover">Pricing</a>
-            <a href="#" class="hover login">Login</a>
+            <a href="nope" class="hover login">Login</a>
         </nav>
     </header> 
     <main>
         <div class="container">
-        <section id="#section1">
-            <div class="fl">
-            <div class="paras">
+        <section id="section1">
+                <div>
                 <h2>Premium Materials</h2>
-                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, mollitia! Lorem ipsum dolor sit amet.</p>
             </div>
-        </div>
-        <div class="fl">
-            <div class="paras">
+            <div>
                 <h2>Fast Shipping</h2>
-                <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, sequi.</p>
             </div>
-        </div>
-        <div class="fl">
-            <div class="paras">
+            <div>
                 <h2>Quality Assurance</h2>
-                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur nesciunt quaerat iste ut dolorum!</p>
             </div>
         </div>
         </section>
+        <section id="section2">
+            <iframe src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"  id="video" frameborder="0"></iframe>
+        </section>
+        <section id="section3" >
+            <div class="c1">
+                <div class="h">TENOR TROMBONE</div>
+                <h3>$600</h3>
+                <ol>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+            <div class="c1">
+                <div class="h">BASS TROMBONE</div>
+                <h3>$900</h3>
+                <ol>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+            <div class="c1">
+                <div class="h">VALVE TROMBONE</div>
+                <h3>$1200</h3>
+                <ol>
+                    <li>Plays similar to a Trumpet</li>
+                    <li>Great for Jazz Bands</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+        </section>
+        <section id="frm">
+        <h2>Our products are so good</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            
+            <input type="email" style="width: 100%;" id="email" placeholder="Enter your email address" required>
+        
+        
+            <input type="submit" value="Order now" name="submit" id="submit">
+        
+        </form>
+    </section>
     </main>
 </body>
 </html>
