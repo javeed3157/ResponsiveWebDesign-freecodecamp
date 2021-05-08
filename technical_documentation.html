@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Languages</title>
+
+    <style>
+        #navbar{
+            position:fixed;
+            top:0px;
+            left: 0px;
+            height: 100%;
+            width: 270px;
+            padding: 45px 0px;
+            color: black;
+            background-color: aliceblue;
+        }
+        body{
+            background-color:rgb(189, 222, 252);
+            color: black;
+        }
+        #navbar header{
+            font-size: 1.5em;
+            text-align: center;
+            margin: 4px;
+        }
+        #navbar  li{
+            list-style:none;
+            padding: 10px 0px;
+            font-size: 1.2em;
+        }
+        #navbar a{
+            text-decoration: none;
+            color:rgb(248, 180, 90);
+        }
+        #navbar a:hover{
+            color: red;
+        }
+        #main-doc{
+            margin-left: 260px;
+            padding: 20px;
+            width: 70%;
+            background-color: rgb(189, 222, 252)
+        }
+        .main-section header{
+            font-size: 1.8em;
+        }
+        .main-section p code{
+            font-size: 1.7em;
+            color: rgb(255, 145, 0);
+        }
+        .nest{
+            color: rgb(37, 16, 16);
+            font-size: 1.3em;
+        }
+        .mar{
+            padding: 6px 0px;
+        }
+        @media only screen and (max-width: 790px){
+            #navbar{
+                    background-color: white;
+                    position: fixed;
+                    top: 0;
+                    padding: 0;
+                    margin: 0;
+                    width: 100%;
+                    height: 255px;
+                    z-index: 1;
+                    border: none;
+                    border-bottom: 2px solid;
+                    background-color: aliceblue;
+            }
+            #navbar li{
+                        text-align: center;
+            }
+            #main-doc{
+                        margin-left: 0px;
+                        margin-top: 270px;
+            }
+            .mar{
+                padding: 0px 0px;
+            }
+            .nest{
+                    font-size: 1.2em;
+            }
+            .main-section p code{
+                                font-size:1.6em ;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <header>Programming Languages</header>
+        <ul>
+            <li><a href="#Python" class="nav-link">Python</a></li>
+            <li><a href="#Java" class="nav-link">Java</a></li>
+            <li><a href="#C" class="nav-link">C</a></li>
+            <li><a href="#C++" class="nav-link">C++</a></li>
+            <li><a href="#JavaScript" class="nav-link">JavaScript</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+
+        <section class="main-section" id="Python">
+            <header>Python</header>
+            <p><code>Welcome to Python</code></p>
+            <p class="ptag">
+                <ul class="nest">
+                    <li>Applications are as follows : </li>
+                    <ul>
+                        <li class="mar">Artificial Intelligence and Machine Learning</li>
+                        <li class="mar">Game Development</li>
+                        <li class="mar">Web Development</li>
+                    </ul>
+                </ul>
+            </p>
+        </section>
+
+        <section class="main-section" id="Java">
+            <header>Java</header>
+            <p><code>Welcome to Java</code></p>
+            <p class="ptag">
+                <ul class="nest">
+                    <li>Applications are as follows : </li>
+                    <ul>
+                        <li class="mar">Desktop GUI Applications</li>
+                        <li class="mar">Mobile Applications</li>
+                        <li class="mar">Embedded Systems</li>
+                    </ul>
+                </ul>
+            </p>
+        </section>
+
+        <section class="main-section" id="C">
+            <header>C</header>
+            <p><code>Welcome to C</code></p>
+            <p class="ptag">
+                <ul class="nest">
+                    <li>Applications are as follows : </li>
+                    <ul>
+                        <li class="mar">Compiler Design</li>
+                        <li class="mar">MySQL</li>
+                        <li class="mar">Embedded Systems</li>
+                    </ul>
+                </ul>
+            </p>
+        </section>
+
+        <section class="main-section" id="C++">
+            <header>C++</header>
+            <p><code>Welcome to C++</code></p>
+            <p class="ptag">
+                <ul class="nest">
+                    <li>Applications are as follows : </li>
+                    <ul>
+                        <li class="mar">Advanced Computation And Graphics</li>
+                        <li class="mar">Cloud/Distributed System</li>
+                        <li class="mar">Database Software</li>
+                    </ul>
+                </ul>
+            </p>
+        </section>
+
+        <section class="main-section" id="JavaScript">
+            <header>JavaScript</header>
+            <p><code>Welcome to JavaScript</code></p>
+            <p class="ptag">
+                <ul class="nest">
+                    <li>Applications are as follows : </li>
+                    <ul>
+                        <li class="mar">Web Applications</li>
+                        <li class="mar">Server Applications</li>
+                        <li class="mar">Smartwatch Apps</li>
+                    </ul>
+                </ul>
+            </p>
+        </section>
+        
+    </main>
+</body>
+</html>
