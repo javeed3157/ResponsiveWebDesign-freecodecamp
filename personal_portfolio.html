@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body{
+            padding-top: 80px;
+            margin: 0;
+        }
+        #navbar{
+            background-color: bisque;
+            display: flex;
+            justify-content: flex-end;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        .nav-list{
+            display: flex;
+            margin-right: 2rem;
+        }
+        #navbar li{
+            list-style: none;
+            margin: 20px;
+            font-size: 25px;
+        }
+        #navbar a{
+            text-decoration: none;
+            color:rgb(55, 0, 206);
+        }
+        #welcome-section{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            background-color:rgb(169, 250, 223);
+        }
+        #welcome-section h1{
+            font-size:3em;
+        }
+        #welcome-section p{
+            font-style: italic;
+            font-size: 2em;
+        }
+        #projects{
+            height: 130vh;
+            background-color: pink;
+        }
+        #projects h2{
+            text-align: center;
+            font-size: 3em;
+            padding: 2em 2em;
+            margin: 0px;
+        }
+        .projects-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+            grid-gap: 4em;
+            width: 100%;
+            margin: 0 auto;
+            max-width: 1280px;
+        }
+        .code{
+            color: rgb(253, 106, 130);
+            transition: color 0.3s ease-out;
+        }
+        .project:hover .code {
+            color: black;
+        }
+        .project-image {
+            width: 100%;
+            height: 300px;
+        }
+        .project-title{
+            text-align: center;
+        }
+        .project{
+            background-color: rgb(253, 106, 130);
+        }
+        #projects .projects-grid a{
+            text-decoration: none;
+            font-size: larger;
+            font-weight: 700;
+            color: white;
+        }
+        #contact{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 4em;
+            background-color: rgb(140, 245, 180);
+            height: 35vh;
+        }
+        .contact-section-header h2{
+            font-size: 3em;
+        }
+        .btn{
+            margin-top: 2em;
+            text-decoration: none;
+            padding: 1.3em;
+            font-size: 1.8em;
+        }
+        footer{
+            display: flex;
+            justify-content: space-around;
+            height: 10vh;
+            background-color: lightyellow;
+            font-size: 1.3em;
+            font-style: italic;
+            border-top: 2px solid black;
+        }
+        footer a{
+            text-decoration: none;
+            color: #000;
+        }
+@media only screen and (max-width:1200px){
+    #welcome-section{
+        height: 75vh;
+    }
+    #welcome-section h1{
+        text-align: center;
+        font-size:2.5em;
+    }
+    #welcome-section p{
+        font-style: italic;
+        font-size: 1.5em;
+    }
+    #projects h2{
+        font-size: 2.5em;
+    }
+    .projects-grid{
+        display: flex;
+        width: fit-content;
+        margin: 0 auto;
+        text-align: center;
+        flex-direction: column;
+    }
+    #projects{
+        height:max-content;
+        padding-bottom: 50px;
+    }
+    #contact{
+        padding-top: 2em;
+    }
+    .contact-section-header h2{
+        font-size: 2.5em;
+    }
+    footer{
+        font-size: 1.5em;
+    }
+    .full{
+        display: none;
+    }
+}
+    </style>
+
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <ul class="nav-list">
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="welcome-section">
+        <h1>Hello I am SHAIK JAVEED SUHAIL</h1>
+        <p>a WEB DEVELOPER</p>
+    </section>
+
+    <section id="projects">
+        <h2>These are some of my projects</h2>
+        <div class="projects-grid">
+
+            <a href="https://codepen.io/javeed3157/full/oNBybZa" target="_blank" class="project project-tile">
+                <img src="https://i.imgur.com/qzvKCmb.png" alt="project" class="project-image">
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Tribute-Page
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a href="https://codepen.io/javeed3157/full/zYNJpjZ" target="_blank" class="project project-tile">
+                <img src="https://i.imgur.com/UAodRwg.png" alt="project" class="project-image">
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Survey-Form
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a href="https://codepen.io/javeed3157/full/NWpqWmp" target="_blank" class="project project-tile">
+                <img src="https://i.imgur.com/kpEkGOH.png" alt="project" class="project-image">
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Technical-Documentation
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-section-header">
+            <h2>Let's connect...</h2>
+        </div>
+        <div class="contact-links">
+        <a id="profile-link" href="https://github.com/freecodecamp" target="_blank" class="btn contact-details">
+            GitHub
+        </a>
+        <a href="https://twitter.com/freecodecamp" target="_blank" class="btn contact-details">
+            Twitter
+        </a>
+        </div>
+    </section>
+
+    <footer>
+        <p class="full">
+          **This is just a fake portfolio. All the projects and contact details given are may or may not be real.
+        </p>
+    
+        <p>
+            &copy; Created by
+        <a href="https://www.freecodecamp.com/" target="_blank">
+            JaveedSuhail
+        </a>
+        </p>
+    </footer>
+
+</body>
+</html>
